@@ -1,9 +1,9 @@
-name:           mysql-simple
+name:           mysql-simple-async
 version:        0.2.2.4
-homepage:       https://github.com/bos/mysql-simple
-bug-reports:    https://github.com/bos/mysql-simple/issues
+homepage:       https://github.com/ryb/mysql-simple
+bug-reports:    https://github.com/ryb/mysql-simple/issues
 synopsis:       A mid-level MySQL client library.
-description:    
+description:
     A mid-level client library for the MySQL database, intended to be
     fast and easy to use.
     .
@@ -16,8 +16,8 @@ description:
     subject to the terms of the GPL.
 license:        BSD3
 license-file:   LICENSE
-author:         Bryan O'Sullivan <bos@serpentine.com>
-maintainer:     Bryan O'Sullivan <bos@serpentine.com>
+author:         Bryan O'Sullivan <bos@serpentine.com>, Ryan Burton <ryb@umich.edu>
+maintainer:     Ryan Burton <ryb@umich.edu>
 copyright:      2011 MailRank, Inc.
 category:       Database
 build-type:     Simple
@@ -45,7 +45,7 @@ library
     blaze-builder,
     blaze-textual,
     bytestring >= 0.9,
-    mysql >= 0.1.1.1,
+    mysql-async >= 0.1.1.1,
     pcre-light,
     old-locale,
     text >= 0.11.0.2,
@@ -61,8 +61,4 @@ library
 
 source-repository head
   type:     git
-  location: http://github.com/bos/mysql-simple
-
-source-repository head
-  type:     mercurial
-  location: http://bitbucket.org/bos/mysql-simple
+  location: http://github.com/ryb/mysql-simple
